@@ -14,9 +14,9 @@ source:
   sha256: 55627bc301245e0a4d6be04565fbaabd9cc360e2e5e4bc1e38341354e6de2542
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,8 +40,7 @@ about:
   summary: Data sets and functions for Klein and Moeschberger (1997), "Survival Analysis, Techniques
     for Censored and Truncated Data", Springer.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
