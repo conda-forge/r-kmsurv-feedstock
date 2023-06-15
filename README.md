@@ -1,11 +1,11 @@
-About r-kmsurv
-==============
+About r-kmsurv-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kmsurv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=KMsurv
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kmsurv-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data sets and functions for Klein and Moeschberger (1997), "Survival Analysis, Techniques for Censored and Truncated Data", Springer.
 
