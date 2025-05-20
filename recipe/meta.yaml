@@ -1,4 +1,4 @@
-{% set version = '0.1-5' %}
+{% set version = "0.1-6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/KMsurv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/KMsurv/KMsurv_{{ version }}.tar.gz
-  sha256: 55627bc301245e0a4d6be04565fbaabd9cc360e2e5e4bc1e38341354e6de2542
+  sha256: 42ec6f2a014b27277ada313ecf21994345704f8b719fe5e7bee8ad4f91652f32
 
 build:
-  number: 1006
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -34,8 +34,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=KMsurv
   license: GPL-3.0-or-later
-  summary: Data sets and functions for Klein and Moeschberger (1997), "Survival Analysis, Techniques
-    for Censored and Truncated Data", Springer.
+  summary: Data sets and functions for Klein and Moeschberger (1997), "Survival Analysis, Techniques for Censored and Truncated Data", Springer.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
